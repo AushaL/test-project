@@ -1,0 +1,53 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start",    
+    "stylelint": "stylelint source/sass/**/*.scss || echo \"Stylelint finished\"",
+    "stylelint-fix": "stylelint source/sass/**/*.scss --fix || echo \"Stylelint finished\"",
+    "eslint": "eslint source/js/*.js",
+    "eslint-fix": "eslint source/js/*.js --fix --max-warnings=0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AushaL/test-project"
+  },
+  "author": "Artsiom Kasenka (Frontend Dev)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/stream": "^3.0.1",
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "del": "^6.0.0",
+    "eslint": "^8.52.0",
+    "eslint-config-htmlacademy": "^10.0.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",    
+    "gulp-uglify": "^3.0.2",
+    "readable-stream": "^3.6.0",
+    "rollup": "^3.26.1",
+    "sass": "^1.62.1",
+    "stylelint": "^15.11.0",
+    "stylelint-config-htmlacademy": "^2.0.6",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^6.0.3",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

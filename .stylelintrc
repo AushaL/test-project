@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "stylelint-config-rational-order",
+    "stylelint-config-htmlacademy"],
+  "plugins": [
+		"stylelint-order",
+    "stylelint-config-rational-order/plugin"
+	],
+  "rules": {
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+    "max-nesting-depth": 4,
+    "declaration-no-important": null,
+    "number-max-precision": null,
+    "order/properties-order": [],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": true,
+      "empty-line-between-groups": false
+    }]
+  }
+}

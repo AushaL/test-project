@@ -1,0 +1,25 @@
+/* Breakpoints */
+$breakpoint-mobile-default: 400px;
+$breakpoint-mobile-fallback: 500px;
+$breakpoint-mobile-portrait: 600px;
+$breakpoint-mobile-landscape: 768px;
+$breakpoint-tablet-small: 800px;
+$breakpoint-tablet: 1024px;
+$breakpoint-laptop: 1200px;
+$breakpoint-laptop-big: 1280px;
+$breakpoint-desktop: 1440px;
+$breakpoint-tv: 1920px;
+
+/* Colors */
+
+$main-dark: #000000;
+$main-white: #ffffff;
+
+/* Fonts */
+
+$font-family-primary: "Lexend", arial, sans-serif;
+$font-size-base: 16px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
