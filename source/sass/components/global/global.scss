@@ -38,9 +38,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: $font-family-primary;
-  font-size: $font-size-base;
-  font-weight: $font-weight-regular;
-  line-height: 20px;
+  @include main-text;
   text-align: left;
   color: $main-white;
   background-color: $main-dark-blue;
