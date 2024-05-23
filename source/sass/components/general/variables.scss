@@ -1,5 +1,5 @@
 /* Breakpoints */
-$breakpoint-mobile-default: 400px;
+$breakpoint-mobile-default: 320px;
 $breakpoint-mobile-fallback: 500px;
 $breakpoint-mobile-portrait: 600px;
 $breakpoint-mobile-landscape: 768px;
@@ -14,12 +14,21 @@ $breakpoint-tv: 1920px;
 
 $main-dark: #000000;
 $main-white: #ffffff;
+$main-white-grey: rgba($main-white, 0.6);
+$main-dark-blue: #110a1d;
+$main-blue-light: #478bf9;
+$main-purple-light: #9dadf2;
 
 /* Fonts */
 
 $font-family-primary: "Lexend", arial, sans-serif;
+
 $font-size-base: 16px;
+$font-size-title: 96px;
+$font-size-heading: 24px;
+$font-size-description: 32px;
+$font-size-description-small: 14px;
 
 $font-weight-regular: 400;
 $font-weight-medium: 500;
-$font-weight-bold: 700;
+$font-weight-bold: 600;
