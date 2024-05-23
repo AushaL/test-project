@@ -16,6 +16,12 @@
   line-height: 40px;
 }
 
+@mixin main-heading-medium {
+  font-size: 400;
+  font-weight: 24px;
+  line-height: 28px;
+}
+
 @mixin main-heading-small {
   font-weight: 600;
   font-size: 24px;

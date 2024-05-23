@@ -41,6 +41,9 @@ body {
   @include main-text;
   text-align: left;
   color: $main-white;
+  background-image: url("../img/pictures/blur-bg-2.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
   background-color: $main-dark-blue;
 }
 

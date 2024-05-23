@@ -1,0 +1,8 @@
+include ../ui-elements/main-link
+
+mixin link-list(items, additionalClass)
+  .link-list(class= additionalClass)
+    ul
+      each item in items
+        li
+          +main-link(item, '#')

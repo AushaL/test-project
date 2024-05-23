@@ -1,0 +1,43 @@
+.hero-text-content {
+  &__title {
+    margin-bottom: 24px;
+    @include main-title;
+    text-transform: uppercase;
+
+    span {
+      color: $main-blue-light;
+    }
+
+    @media (max-width: $breakpoint-mobile-default) {
+      margin-bottom: 12px;
+
+      font-size: 46px;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    @include main-description;
+    margin-bottom: 48px;
+    color: $main-white-grey;
+
+    @media (max-width: $breakpoint-mobile-default) {
+      margin-bottom: 24px;
+
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+    }
+  }
+
+  .main-button {
+    min-width: 393px;
+    padding: 20px 72px;
+
+    @media (max-width: $breakpoint-mobile-default) {
+      min-width: 100%;
+      padding: 15px 56.5px;
+    }
+  }
+}

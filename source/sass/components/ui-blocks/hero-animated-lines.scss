@@ -1,0 +1,14 @@
+.hero-animated-lines {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  @media (max-width: $breakpoint-mobile-default) {
+    width: 100%;
+    height: auto;
+    gap: 8.16px;
+    flex-direction: column;
+  }
+}

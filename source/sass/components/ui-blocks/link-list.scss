@@ -1,0 +1,11 @@
+.link-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  @media (max-width: $breakpoint-mobile-default) {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
