@@ -37,14 +37,15 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: $font-family-primary;
-  @include main-text;
-  text-align: left;
   color: $main-white;
+  font-family: $font-family-primary;
+  text-align: left;
+  background-color: $main-dark-blue;
   background-image: url("../img/pictures/blur-bg-2.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-color: $main-dark-blue;
+
+  @include main-text;
 
   @media (max-width: $breakpoint-desktop) {
     background-position: right -340%;

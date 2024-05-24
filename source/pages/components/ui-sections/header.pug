@@ -25,7 +25,10 @@ header.header
         .header__user-controls
           ul
             li
-              +secondary-button('EN', true, 'img/icons/planet-icon.svg', 'header__language-button--desktop')
+              button.secondary-button(type="button").header__language-button
+                span.header__language-option.active EN
+                span.header__language-option RU
+                img(src='img/icons/planet-icon.svg', alt="").header__language-button--desktop
             li
               +secondary-button('LOG IN', false)
             li

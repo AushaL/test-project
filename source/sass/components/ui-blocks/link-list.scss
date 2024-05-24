@@ -1,9 +1,9 @@
 .link-list {
   ul {
     display: flex;
+    gap: 40px;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
 
     @media (max-width: $breakpoint-tablet) {
       flex-direction: column;

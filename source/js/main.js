@@ -1,5 +1,7 @@
-import mobileNav from "./components/mobile-nav";
+import mobileNav from './components/mobile-nav';
+import languageSelect from './components/language-select';
 
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
   mobileNav();
+  languageSelect();
 });

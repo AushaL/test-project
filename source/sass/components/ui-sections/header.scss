@@ -31,10 +31,10 @@
         top: 90px;
         right: 0;
         display: block;
-        height: 100vh;
         width: 100%;
-        background-color: $main-dark-blue;
+        height: 100vh;
         padding-bottom: 10px;
+        background-color: $main-dark-blue;
       }
     }
   }
@@ -43,14 +43,14 @@
     align-self: center;
 
     ul {
-      margin-left: 20px;
-      margin-right: 20px;
       gap: 32px;
+      margin-right: 20px;
+      margin-left: 20px;
 
       @media (max-width: $breakpoint-tablet) {
-        justify-content: flex-start;
         flex-direction: column;
         gap: 5px;
+        justify-content: flex-start;
       }
     }
 
@@ -58,8 +58,8 @@
       @media (max-width: $breakpoint-tablet) {
         width: 100%;
         padding: 13px 20px;
-        border-radius: 28px;
         border: 2px solid $main-blue-light;
+        border-radius: 28px;
       }
 
       .main-link {
@@ -106,25 +106,29 @@
 
     ul {
       display: flex;
+      gap: 14px;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
 
       @media (max-width: $breakpoint-tablet) {
         flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
         gap: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
       }
     }
 
     li {
+      position: relative;
+
       @media (max-width: $breakpoint-tablet) {
         width: 100%;
       }
     }
 
     .secondary-button {
+      gap: 5px;
+
       @media (max-width: $breakpoint-tablet) {
         width: 100%;
       }
@@ -137,11 +141,19 @@
     }
   }
 
+  &__language-button {
+    transition: all 0.3s ease;
+
+    &.active {
+      min-width: 95px;
+    }
+  }
+
   &__language-button--mobile {
     display: none;
     width: 36px;
-    height: 36px;
     min-width: 36px;
+    height: 36px;
     border-radius: 50%;
 
     span {
@@ -152,8 +164,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: auto;
       margin-right: 4px;
+      margin-left: auto;
     }
   }
 
@@ -182,5 +194,18 @@
 
   &__close-icon {
     display: none;
+  }
+
+  &__language-option {
+    display: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      display: inline;
+    }
   }
 }

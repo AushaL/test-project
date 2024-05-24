@@ -1,14 +1,14 @@
 .socials {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: column;
   gap: 14px;
+  align-items: center;
+  justify-content: space-between;
 
   &__list {
     display: flex;
-    align-items: center;
     gap: 8px;
+    align-items: center;
 
     li {
       position: relative;
@@ -48,9 +48,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 16px;
     height: 16px;
+    transform: translate(-50%, -50%);
   }
 
   @media (max-width: $breakpoint-tablet) {
