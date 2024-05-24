@@ -19,6 +19,7 @@
   &__grid {
     display: flex;
     align-items: center;
+    transition: all 0.3s ease;
 
     @media (max-width: $breakpoint-tablet) {
       display: none;
@@ -177,5 +178,9 @@
     @media (max-width: $breakpoint-tablet) {
       display: block;
     }
+  }
+
+  &__close-icon {
+    display: none;
   }
 }

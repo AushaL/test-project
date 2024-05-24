@@ -17,7 +17,8 @@ header.header
     .header__wrapper
       +secondary-button('EN', true, 'img/icons/planet-icon.svg', 'header__language-button--mobile')
       .header__burger-button
-        img(src="img/icons/burger-icon.svg", alt="")
+        img(src="img/icons/burger-icon.svg", alt="").header__burger-icon
+        img(src="img/icons/close-icon.svg", alt="").header__close-icon
       .header__grid
         nav
           +link-list(linksList)

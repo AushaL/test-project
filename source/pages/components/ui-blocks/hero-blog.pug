@@ -4,10 +4,11 @@ include ../ui-elements/blog-date-text
 mixin hero-blog(title, items, additionalClass)
   .hero-blog
     h3.hero-blog__title= title
-    .hero-blog__container
-      ul.hero-blog__list
-        each item in items
-          li
-            a(href= item.href)
-              +main-heading(item.heading)
-              +blog-date-text(item.date)
+    .hero-blog__wrapper
+      .hero-blog__container
+        ul.hero-blog__list
+          each item in items
+            li
+              a(href= item.href)
+                +main-heading(item.heading)
+                +blog-date-text(item.date)
