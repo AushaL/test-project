@@ -1,6 +1,7 @@
 .hero-animated-lines {
   width: 30%;
   height: 100%;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;
@@ -18,5 +19,45 @@
   @media (max-width: $breakpoint-mobile-default) {
     width: 100%;
     height: auto;
+  }
+
+  @keyframes topLineAnimation {
+    from {
+      top: 0;
+    }
+
+    to {
+      top: -100%;
+    }
+  }
+
+  @keyframes downLineAnimation {
+    from {
+      transform: translateY(-100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  &__line {
+    position: absolute;
+    z-index: -1;
+    display: inline-block;
+    width: 100px;
+    height: auto;
+
+    // &:nth-child(1) {
+    //   animation: 10s downLineAnimation infinite linear;
+    // }
+
+    &:nth-child(2) {
+      animation: 10s topLineAnimation infinite linear;
+    }
+
+    // &:nth-child(3) {
+    //   animation: 10s downLineAnimation infinite linear;
+    // }
   }
 }

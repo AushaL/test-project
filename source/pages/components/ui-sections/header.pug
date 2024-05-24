@@ -15,7 +15,10 @@ include ../ui-elements/secondary-button
 header.header
   .section-container
     .header__wrapper
-      +secondary-button('EN', true, 'img/icons/planet-icon.svg', 'header__language-button--mobile')
+      button.secondary-button(type="button").header__language-button.header__language-button--mobile
+        span.header__language-option EN
+        span.header__language-option RU
+        img(src='img/icons/planet-icon.svg', alt="")
       .header__burger-button
         img(src="img/icons/burger-icon.svg", alt="").header__burger-icon
         img(src="img/icons/close-icon.svg", alt="").header__close-icon
@@ -25,10 +28,10 @@ header.header
         .header__user-controls
           ul
             li
-              button.secondary-button(type="button").header__language-button
+              button.secondary-button(type="button").header__language-button.header__language-button--desktop
                 span.header__language-option.active EN
                 span.header__language-option RU
-                img(src='img/icons/planet-icon.svg', alt="").header__language-button--desktop
+                img(src='img/icons/planet-icon.svg', alt="")
             li
               +secondary-button('LOG IN', false)
             li

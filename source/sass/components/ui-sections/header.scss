@@ -61,23 +61,23 @@
         border: 2px solid $main-blue-light;
         border-radius: 28px;
       }
+    }
 
-      .main-link {
-        @media (max-width: $breakpoint-tablet) {
-          font-size: 18px;
-          line-height: 24px;
-        }
+    .main-link {
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 18px;
+        line-height: 24px;
       }
+    }
+  }
 
-      .secondary-link {
-        @media (max-width: $breakpoint-tablet) {
-          text-align: center;
-        }
+  .secondary-link {
+    @media (max-width: $breakpoint-tablet) {
+      text-align: center;
+    }
 
-        span {
-          margin: 0 auto;
-        }
-      }
+    span {
+      margin: 0 auto;
     }
   }
 
@@ -151,6 +151,7 @@
 
   &__language-button--mobile {
     display: none;
+    gap: 5px;
     width: 36px;
     min-width: 36px;
     height: 36px;
@@ -158,6 +159,10 @@
 
     span {
       display: none;
+    }
+
+    &.active {
+      border-radius: 24px;
     }
 
     @media (max-width: $breakpoint-tablet) {

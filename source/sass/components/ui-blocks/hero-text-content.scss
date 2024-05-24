@@ -1,6 +1,7 @@
 .hero-text-content {
   &__title {
     margin-bottom: 24px;
+
     @include main-title;
     text-transform: uppercase;
 
@@ -10,7 +11,6 @@
 
     @media (max-width: $breakpoint-tablet) {
       margin-bottom: 12px;
-
       font-size: 46px;
       line-height: 50px;
       text-align: center;
@@ -24,7 +24,6 @@
 
     @media (max-width: $breakpoint-tablet) {
       margin-bottom: 24px;
-
       font-size: 20px;
       line-height: 26px;
       text-align: center;

@@ -3,7 +3,7 @@
 
   &:hover {
     color: $main-blue-light;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   @media (max-width: $breakpoint-mobile-default) {

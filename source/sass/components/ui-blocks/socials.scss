@@ -28,10 +28,8 @@
       }
     }
 
-    li:hover svg {
-      path {
-        fill: $main-white;
-      }
+    li:hover path {
+      fill: $main-white;
     }
   }
 
