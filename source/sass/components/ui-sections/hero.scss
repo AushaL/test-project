@@ -2,4 +2,116 @@
   background-image: url("../img/pictures/blur-bg-1.svg");
   background-repeat: no-repeat;
   background-position: left top;
+
+  .hero-animated-lines__wrapper--mobile {
+    display: none;
+
+    @media (max-width: $breakpoint-mobile-default) {
+      display: flex;
+      gap: 8.16px;
+      flex-direction: column;
+    }
+  }
+
+  .section-container {
+    @media (max-width: $breakpoint-tablet) {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: $breakpoint-desktop) {
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    padding-bottom: 119px;
+
+    background-size: 90%;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-desktop) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .hero-text-content {
+    width: 700px;
+    padding-top: 296px;
+    margin-right: 42px;
+
+    @media (max-width: $breakpoint-desktop) {
+      max-width: 100%;
+      padding-top: 70px;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: $breakpoint-mobile-default) {
+      max-width: 300px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 70px;
+      margin: 0 auto;
+      margin-bottom: 32px;
+    }
+  }
+
+  .main-button {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    border-radius: 48px;
+
+    @media (max-width: $breakpoint-desktop) {
+      min-width: 30%;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    @media (max-width: $breakpoint-mobile-default) {
+      min-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .hero-blog {
+    margin-left: 64.2px;
+    padding-top: 140px;
+
+    @media (max-width: $breakpoint-desktop) {
+      padding-top: 33px;
+      margin-left: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    @media (max-width: $breakpoint-mobile-default) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  .hero-animated-lines {
+    &__wrapper {
+      @media (max-width: $breakpoint-mobile-default) {
+        flex-direction: column;
+      }
+    }
+  }
 }

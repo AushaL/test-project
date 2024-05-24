@@ -1,3 +1,52 @@
-header.footer
+include ../ui-blocks/link-list
+include ../ui-blocks/socials
+
+-
+  linksList = [
+    'Terms & Conditions',
+    'Cookies',
+    'Contacts',
+    'Careers',
+    'Brand Guide'
+  ]
+
+  socialsList = [
+    {
+      src: 'img/icons/Twitter.svg',
+      name: 'twitter'
+    },
+    {
+      src: 'img/icons/Facebook.svg',
+      name: 'facebook'
+    },
+    {
+      src: 'img/icons/Instagram.svg',
+      name: 'instagram'
+    },
+    {
+      src: 'img/icons/Linkedin.svg',
+      name: 'linkedin'
+    },
+    {
+      src: 'img/icons/YouTube.svg',
+      name: 'youtube'
+    },
+    {
+      src: 'img/icons/TikTok.svg',
+      name: 'tiktok'
+    },
+    {
+      src: 'img/icons/Telegram.svg',
+      name: 'telegram'
+    },
+    {
+      src: 'img/icons/VK.svg',
+      name: 'vk'
+    }
+  ]
+
+footer.footer
   .section-container
-    p sadasd 123213123
+    .footer__content
+      +link-list(linksList)
+      +socials(socialsList, 'Our social media:')

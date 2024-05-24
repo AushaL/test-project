@@ -1,12 +1,13 @@
 include ../ui-elements/main-heading
 include ../ui-elements/blog-date-text
 
-mixin hero-blog(title, items, text, additionalClass)
+mixin hero-blog(title, items, additionalClass)
   .hero-blog
     h3.hero-blog__title= title
     .hero-blog__container
       ul.hero-blog__list
         each item in items
           li
-            +main-heading(item.heading)
-            +blog-date-text(item.date)
+            a(href= item.href)
+              +main-heading(item.heading)
+              +blog-date-text(item.date)

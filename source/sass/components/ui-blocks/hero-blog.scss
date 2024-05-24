@@ -5,7 +5,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    @media (max-width: $breakpoint-mobile-default) {
+    @media (max-width: $breakpoint-tablet) {
       margin-bottom: 18px;
       font-size: 32px;
       line-height: 40px;
@@ -13,13 +13,15 @@
   }
 
   &__container {
+    height: 659px;
     padding: 24px;
+    padding-bottom: 0;
     border: 3px solid $main-blue-light;
     border-radius: 100px;
     overflow: hidden;
     background-color: rgba($color: $main-white, $alpha: 0.12);
 
-    @media (max-width: $breakpoint-mobile-default) {
+    @media (max-width: $breakpoint-tablet) {
       padding: 10px;
       border: 2px solid $main-blue-light;
       border-radius: 50px;
@@ -37,18 +39,23 @@
       border-radius: 196px;
       background-color: $secondary-dark-blue;
       transition: all 0.3 ease;
+      cursor: pointer;
 
       &:hover {
         background-color: $main-blue-light;
       }
 
-      @media (max-width: $breakpoint-mobile-default) {
+      @media (max-width: $breakpoint-tablet) {
         padding: 15px 35px;
         border-radius: 40px;
       }
     }
 
-    @media (max-width: $breakpoint-mobile-default) {
+    a {
+      text-decoration: none;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
       gap: 10px;
     }
   }
@@ -56,7 +63,7 @@
   .main-heading {
     margin-bottom: 14px;
 
-    @media (max-width: $breakpoint-mobile-default) {
+    @media (max-width: $breakpoint-tablet) {
       margin-bottom: 6px;
     }
   }

@@ -9,6 +9,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: $main-white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $main-blue-light;
+    border-color: $main-blue-light;
+  }
 
   img {
     width: 15px;

@@ -1,5 +1,6 @@
-mixin secondary-button(name, iconSrc, additionalClass)
+mixin secondary-button(name, isIcon, iconSrc, additionalClass)
   button.secondary-button(class= additionalClass type="button")
-    = name
-    img(src= iconSrc, alt="")
+    span= name
+    if isIcon
+      img(src= iconSrc, alt="")
 

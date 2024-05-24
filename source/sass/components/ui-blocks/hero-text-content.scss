@@ -8,7 +8,7 @@
       color: $main-blue-light;
     }
 
-    @media (max-width: $breakpoint-mobile-default) {
+    @media (max-width: $breakpoint-tablet) {
       margin-bottom: 12px;
 
       font-size: 46px;
@@ -22,7 +22,7 @@
     margin-bottom: 48px;
     color: $main-white-grey;
 
-    @media (max-width: $breakpoint-mobile-default) {
+    @media (max-width: $breakpoint-tablet) {
       margin-bottom: 24px;
 
       font-size: 20px;

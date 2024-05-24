@@ -1,11 +1,13 @@
 .link-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 
-  @media (max-width: $breakpoint-mobile-default) {
-    flex-direction: column;
-    gap: 2px;
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      gap: 2px;
+    }
   }
 }

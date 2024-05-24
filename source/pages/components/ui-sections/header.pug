@@ -1,5 +1,36 @@
+include ../ui-blocks/link-list
+include ../ui-elements/main-button
+include ../ui-elements/secondary-button
+
+-
+  linksList = [
+    'About us',
+    'Brands',
+    'Commissions',
+    'News',
+    'Contact us',
+    'Careers'
+  ]
+
 header.header
   .section-container
+    .header__wrapper
+      +secondary-button('EN', true, 'img/icons/planet-icon.svg', 'header__language-button--mobile')
+      .header__burger-button
+        img(src="img/icons/burger-icon.svg", alt="")
+      .header__grid
+        nav
+          +link-list(linksList)
+        .header__user-controls
+          ul
+            li
+              +secondary-button('EN', true, 'img/icons/planet-icon.svg', 'header__language-button--desktop')
+            li
+              +secondary-button('LOG IN', false)
+            li
+              +main-button('SIGN UP')
+
+
 
 
 

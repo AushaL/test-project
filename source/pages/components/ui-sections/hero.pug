@@ -1,2 +1,62 @@
+include ../ui-blocks/hero-text-content
+include ../ui-blocks/hero-animated-lines
+include ../ui-blocks/hero-blog
+
+-
+  postsList = [
+    {
+      heading: 'BEM Simple Naming Convention For CSS Classes',
+      date: {
+        text: '05.15.2018',
+        datetime: '2018-05-15'
+      },
+      href: 'https://medium.com/tech-tajawal/bem-simple-naming-convention-for-css-classes-9660438d04a2'
+    },
+    {
+      heading: 'Learn the SCSS (Sass) Basics in 5 Minutes',
+      date: {
+        text: '10.02.2020',
+        datetime: '2020-10-02'
+      },
+      href: '#'
+    },
+    {
+      heading: 'Why I’m sticking with Vue in 2023',
+      date: {
+        text: '11.12.2023',
+        datetime: '2023-11-12'
+      },
+      href: '#'
+    },
+    {
+      heading: 'React 19 is Coming, What’s New?',
+      date: {
+        text: '06.03.2023',
+        datetime: '2023-06-03'
+      },
+      href: '#'
+    },
+    {
+      heading: 'Pinia: The new official state management library for Vue',
+      date: {
+        text: '05.12.2023',
+        datetime: '2023-12-05'
+      },
+      href: '#'
+    },
+    {
+      heading: 'What Is Redux?',
+      date: {
+        text: '08.05.2023',
+        datetime: '2023-08-05'
+      },
+      href: '#'
+    },
+  ]
+
 section.hero
   .section-container
+    .hero__wrapper
+      +hero-text-content('HOUSE OF', 'GAMBLING', 'Raise your ROI with direct advertiser', 'Become a Partner')
+      +hero-animated-lines()
+      +hero-blog('BLOG', postsList)
