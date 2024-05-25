@@ -42,7 +42,11 @@
 
     overflow: hidden;
     overflow-y: scroll;
-    // background-color: rgba($color: $main-white, $alpha: 0.12);
+
+    @-moz-document url-prefix() {
+      scrollbar-color: $main-blue-light rgba($color: #ffffff, $alpha: 0.12);
+      scrollbar-width: thin;
+    }
 
     &::-webkit-scrollbar-track {
       border-radius: 50px;
@@ -52,6 +56,7 @@
 
     &::-webkit-scrollbar {
       width: 12px;
+      height: 12px;
       border-radius: 50px;
       background-color: rgba($color: #ffffff, $alpha: 0.12);
     }

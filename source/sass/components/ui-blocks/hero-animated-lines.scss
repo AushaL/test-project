@@ -6,6 +6,8 @@
   &__wrapper {
     display: flex;
     gap: 16px;
+    height: 1000px;
+    overflow: hidden;
 
     @media (max-width: $breakpoint-mobile-default) {
       display: none;
@@ -23,11 +25,11 @@
 
   @keyframes topLineAnimation {
     from {
-      top: 0;
+      transform: translateY(0);
     }
 
     to {
-      top: -100%;
+      transform: translateY(-100%);
     }
   }
 
@@ -41,23 +43,66 @@
     }
   }
 
+  @keyframes rightLineAnimation {
+    from {
+      transform: translateX(-70%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes leftLineAnimation {
+    from {
+      transform: translateX(0%);
+    }
+
+    to {
+      transform: translateX(-70%);
+    }
+  }
+
   &__line {
-    position: absolute;
-    z-index: -1;
     display: inline-block;
     width: 100px;
     height: auto;
+  }
 
-    // &:nth-child(1) {
-    //   animation: 10s downLineAnimation infinite linear;
-    // }
+  &__wrapper--desktop.animate {
+    .hero-animated-lines__line {
+      &:nth-child(1) {
+        animation: 10s downLineAnimation infinite linear;
+      }
 
-    &:nth-child(2) {
-      animation: 10s topLineAnimation infinite linear;
+      &:nth-child(2) {
+        animation: 10s topLineAnimation infinite linear;
+      }
+
+      &:nth-child(3) {
+        animation: 10s downLineAnimation infinite linear;
+      }
     }
+  }
 
-    // &:nth-child(3) {
-    //   animation: 10s downLineAnimation infinite linear;
-    // }
+  &__wrapper--mobile.animate {
+    .hero-animated-lines__line {
+      @media (max-width: $breakpoint-tablet) {
+        display: flex;
+        width: 100%;
+
+        &:nth-child(1) {
+          animation: 10s rightLineAnimation infinite linear;
+        }
+
+        &:nth-child(2) {
+          animation: 10s leftLineAnimation infinite linear;
+        }
+
+        &:nth-child(3) {
+          animation: 10s rightLineAnimation infinite linear;
+        }
+      }
+    }
   }
 }

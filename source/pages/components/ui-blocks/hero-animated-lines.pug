@@ -1,12 +1,28 @@
 mixin hero-animated-lines()
   .hero-animated-lines
-    .hero-animated-lines__wrapper
-      .hero-animated-lines__line
-      //-   img(src="img/pictures/hero-line-bg-1.svg", alt="")
-      //-   img(src="img/pictures/hero-line-bg-1.svg", alt="")
-      img(src="img/pictures/hero-line-bg-2.svg", alt="").hero-animated-lines__line
-      img(src="img/pictures/hero-line-bg-3.svg", alt="").hero-animated-lines__line
+    .hero-animated-lines__wrapper.hero-animated-lines__wrapper--desktop
+      .hero-animated-lines__line.hero-animated-lines__line--first
+        img(src="img/pictures/hero-line-bg-1.svg", alt="")
+      .hero-animated-lines__line.hero-animated-lines__line--second
+        img(src="img/pictures/hero-line-bg-2.svg", alt="")
+      .hero-animated-lines__line.hero-animated-lines__line--third
+        img(src="img/pictures/hero-line-bg-3.svg", alt="")
   .hero-animated-lines__wrapper--mobile
-    img(src="img/pictures/hero-line-bg-1-mobile.svg", alt="").hero-animated-lines__line
-    img(src="img/pictures/hero-line-bg-2-mobile.svg", alt="").hero-animated-lines__line
-    img(src="img/pictures/hero-line-bg-3-mobile.svg", alt="").hero-animated-lines__line
+    .hero-animated-lines__line.hero-animated-lines__line--first
+      img(src="img/pictures/hero-line-bg-1-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-1-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-1-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-1-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-1-mobile.svg", alt="")
+    .hero-animated-lines__line.hero-animated-lines__line--second
+      img(src="img/pictures/hero-line-bg-2-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-2-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-2-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-2-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-2-mobile.svg", alt="")
+    .hero-animated-lines__line.hero-animated-lines__line--third
+      img(src="img/pictures/hero-line-bg-3-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-3-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-3-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-3-mobile.svg", alt="")
+      img(src="img/pictures/hero-line-bg-3-mobile.svg", alt="")

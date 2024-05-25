@@ -6,10 +6,20 @@
   .hero-animated-lines__wrapper--mobile {
     display: none;
 
-    @media (max-width: $breakpoint-mobile-default) {
+    @media (max-width: $breakpoint-tablet) {
       display: flex;
       flex-direction: column;
       gap: 8.16px;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .hero-animated-lines__wrapper--desktop {
+    display: flex;
+
+    @media (max-width: $breakpoint-tablet) {
+      display: none;
     }
   }
 
